@@ -3,6 +3,9 @@ let btns = document.querySelectorAll('button');
 
 let string = "";
 let arr = Array.from(btns);
+window.onload = ()=>{
+    input.focus()
+}
 arr.forEach(btn => {
     btn.addEventListener('click', (e) => {
         if (e.target.innerHTML == '=') {
