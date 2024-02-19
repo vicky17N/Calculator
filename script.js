@@ -4,7 +4,7 @@ let btns = document.querySelectorAll('button');
 let string = "";
 let arr = Array.from(btns);
 window.onload = ()=>{
-    input.focus()
+    document.getElementById('inputbox').focus();
 }
 arr.forEach(btn => {
     btn.addEventListener('click', (e) => {
