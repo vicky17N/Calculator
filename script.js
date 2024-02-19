@@ -1,11 +1,9 @@
-let input = document.getElementById('inputbox').focus();
+let input = document.getElementById('inputbox');
 let btns = document.querySelectorAll('button');
 
 let string = "";
 let arr = Array.from(btns);
-window.onload = ()=>{
-    document.getElementById('inputbox').focus();
-}
+
 arr.forEach(btn => {
     btn.addEventListener('click', (e) => {
         if (e.target.innerHTML == '=') {
